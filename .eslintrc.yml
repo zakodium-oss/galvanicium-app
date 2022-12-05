@@ -1,0 +1,7 @@
+extends:
+  - zakodium/ts
+  - zakodium/react
+parserOptions:
+  project:
+    - tsconfig.json
+    - tsconfig.node.json
