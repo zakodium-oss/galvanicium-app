@@ -27,7 +27,8 @@
     "eslint-config-zakodium": "^7.0.0",
     "prettier": "^2.8.0",
     "typescript": "^4.9.3",
-    "vite": "^3.2.5"
+    "vite": "^3.2.5",
+    "vite-plugin-pwa": "^0.13.3"
   },
   "volta": {
     "node": "16.18.1"
