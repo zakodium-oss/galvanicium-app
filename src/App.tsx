@@ -1,25 +1,19 @@
-import { useState } from 'react';
+import { KbsProvider } from 'react-kbs';
+import { AppStateProvider } from 'react-science/app-data';
+import { RootLayout, FullScreenProvider } from 'react-science/ui';
 
-import './App.css';
-import PwaReloadPrompt from './pwa/PwaReloadPrompt';
+import MainLayout from './MainLayout';
 
-function App() {
-  const [count, setCount] = useState(0);
-
+export default function App() {
   return (
-    <div className="App">
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button type="button" onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <PwaReloadPrompt />
-    </div>
+    <RootLayout>
+      <KbsProvider>
+        <AppStateProvider>
+          <FullScreenProvider>
+            <MainLayout />
+          </FullScreenProvider>
+        </AppStateProvider>
+      </KbsProvider>
+    </RootLayout>
   );
 }
-
-export default App;
