@@ -1,8 +1,8 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 
-import App from './App';
-import PwaReloadPrompt from './pwa/PwaReloadPrompt';
+import App from './App.js';
+import PwaReloadPrompt from './pwa/PwaReloadPrompt.js';
 
 import './main.css';
 

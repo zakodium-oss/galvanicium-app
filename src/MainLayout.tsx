@@ -25,8 +25,8 @@ import {
   FullSpinner,
 } from 'react-science/ui';
 
-import { AboutInformation } from './components/AboutInformation';
-import { loadFiles } from './helpers/loadFiles';
+import { AboutInformation } from './components/AboutInformation.js';
+import { loadFiles } from './helpers/loadFiles.js';
 
 const mainCss = {
   root: css`

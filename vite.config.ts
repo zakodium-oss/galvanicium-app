@@ -14,6 +14,7 @@ export default defineConfig({
     },
   },
   plugins: [
+    // @ts-expect-error wrong has no call signatures
     react(),
     vitePWA({
       registerType: 'prompt',
