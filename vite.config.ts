@@ -5,7 +5,16 @@ import { VitePWA as vitePWA } from 'vite-plugin-pwa';
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  esbuild: {
+    jsx: 'automatic',
+  },
+  optimizeDeps: {
+    esbuildOptions: {
+      target: 'esnext',
+    },
+  },
   plugins: [
+    // @ts-expect-error wrong has no call signatures
     react(),
     vitePWA({
       registerType: 'prompt',

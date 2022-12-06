@@ -5,3 +5,5 @@ parserOptions:
   project:
     - tsconfig.json
     - tsconfig.node.json
+rules:
+  'react/no-unknown-property': ['error', { ignore: ['css'] }]

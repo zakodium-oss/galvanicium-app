@@ -1,11 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
 
-import App from './App';
-import './index.css';
+import App from './App.js';
+import PwaReloadPrompt from './pwa/PwaReloadPrompt.js';
 
-ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
-  <React.StrictMode>
+import './main.css';
+
+createRoot(document.querySelector('#root') as HTMLDivElement).render(
+  <StrictMode>
     <App />
-  </React.StrictMode>,
+    <PwaReloadPrompt />
+  </StrictMode>,
 );
