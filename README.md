@@ -1,6 +1,6 @@
 # Galvanicium application
 
-<https://app.galvanicium.com>
+<https://app.galvanicium.org>
 
 Galvanium is a web application made to visualize and superimpose BioLogic data.
 
@@ -8,7 +8,7 @@ This repository contains the source code of the application.
 
 ## Documentation
 
-<https://www.galvanicium.com>
+<https://www.galvanicium.org>
 
 ## Funding
 
