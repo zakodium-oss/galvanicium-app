@@ -17,8 +17,6 @@ export default function PwaReloadPrompt() {
     },
   });
 
-  console.log({ offlineReady, needRefresh });
-
   const close = () => {
     setOfflineReady(false);
     setNeedRefresh(false);
