@@ -20,10 +20,15 @@ export default defineConfig({
       registerType: 'prompt',
       manifest: {
         scope: '/',
+        lang: 'en',
+        display: 'standalone',
+        background_color: '#ffffff',
+        theme_color: '#ffffff',
+
         name: 'Galvanicium',
         short_name: 'Galvanicium',
         description: 'Galvanicium description',
-        theme_color: '#ffffff',
+
         icons: [
           {
             src: 'pwa-192x192.png',
