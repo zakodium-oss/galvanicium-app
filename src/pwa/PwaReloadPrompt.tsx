@@ -1,6 +1,39 @@
-import './ReloadPrompt.css';
-
+/** @jsxImportSource @emotion/react */
+import { css } from '@emotion/react';
 import { useRegisterSW } from 'virtual:pwa-register/react';
+
+const pwaReloadPromptCss = {
+  container: css`
+    padding: 0;
+    margin: 0;
+    width: 0;
+    height: 0;
+  `,
+  toast: css`
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin: 16px;
+    padding: 12px;
+    border: 1px solid #8885;
+    border-radius: 4px;
+    z-index: 1;
+    text-align: left;
+    box-shadow: 3px 4px 5px 0 #8885;
+    background-color: white;
+  `,
+  toastButtons: css`
+    display: flex;
+    justify-content: space-between;
+  `,
+  toastButton: css`
+    border: 1px solid #8885;
+    outline: none;
+    margin-right: 5px;
+    border-radius: 2px;
+    padding: 3px 10px;
+  `,
+};
 
 export default function PwaReloadPrompt() {
   const {
@@ -13,29 +46,28 @@ export default function PwaReloadPrompt() {
   };
 
   return (
-    <div className="ReloadPrompt-container">
+    <div css={pwaReloadPromptCss.container}>
       {needRefresh && (
-        <div className="ReloadPrompt-toast">
-          <div className="ReloadPrompt-message">
-            <span>
-              A new version of the application is available. Click on the reload
-              button to update.
-            </span>
+        <div css={pwaReloadPromptCss.toast}>
+          <div>
+            <p>A new version of Galvanicium is available.</p>
           </div>
-          <button
-            type="button"
-            className="ReloadPrompt-toast-button"
-            onClick={() => void updateServiceWorker(true)}
-          >
-            Reload
-          </button>
-          <button
-            type="button"
-            className="ReloadPrompt-toast-button"
-            onClick={() => close()}
-          >
-            Close
-          </button>
+          <div css={pwaReloadPromptCss.toastButtons}>
+            <button
+              type="button"
+              css={pwaReloadPromptCss.toastButton}
+              onClick={() => void updateServiceWorker(true)}
+            >
+              Reload
+            </button>
+            <button
+              type="button"
+              css={pwaReloadPromptCss.toastButton}
+              onClick={() => close()}
+            >
+              Close
+            </button>
+          </div>
         </div>
       )}
     </div>
