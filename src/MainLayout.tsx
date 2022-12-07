@@ -1,6 +1,5 @@
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
-import { FaInfo } from 'react-icons/fa';
 import {
   IvPlotView,
   useDropFiles,
@@ -72,8 +71,8 @@ export default function MainLayout() {
       <Header>
         <Toolbar orientation="horizontal">
           <AboutDialogToolbarButton
-            name="Analysis UI Components - BIG MAP"
-            icon={<FaInfo />}
+            name="Galvanicium"
+            icon={<img src="/logo/icon.svg" />}
             body={<AboutInformation />}
           />
         </Toolbar>

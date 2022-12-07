@@ -10,7 +10,7 @@ const aboutInformationCss = {
     align-items: center;
   `,
   link: css`
-    color: rgb(150, 150, 150);
+    color: rgb(80, 80, 80);
     &:hover {
       color: rgb(0, 188, 212);
     }
@@ -26,29 +26,36 @@ const aboutInformationCss = {
 export function AboutInformation() {
   return (
     <div css={aboutInformationCss.root}>
-      <p>LOGO</p>
-      <div>
-        <p>Version</p>
-        <a
-          css={aboutInformationCss.link}
-          href="https://github.com/zakodium-oss/react-science"
-        >
-          HEAD
-        </a>
-      </div>
-      <span css={aboutInformationCss.separator} />
-      <a
-        css={aboutInformationCss.link}
-        href="https://github.com/zakodium-oss/react-science"
-      >
-        GitHub ( https://github.com/zakodium-oss/react-science )
-      </a>
+      <p>
+        <img src="/logo/icon.svg" width="100" />
+      </p>
       <span css={aboutInformationCss.separator} />
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, officiis
-        saepe natus illo tenetur eaque porro nihil reprehenderit magnam ipsa
-        ipsam dolores ipsum? Ad vero eos, consequuntur voluptatum incidunt
-        voluptatem.
+        <a
+          css={aboutInformationCss.link}
+          href="https://www.galvanicium.org"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Documentation ( https://www.galvanicium.org )
+        </a>
+      </p>
+      <p>
+        <a
+          css={aboutInformationCss.link}
+          href="https://github.com/zakodium-oss/galvanicium-app"
+          target="_blank"
+          rel="noreferrer"
+        >
+          GitHub ( https://github.com/zakodium-oss/galvanicium-app )
+        </a>
+      </p>
+      <span css={aboutInformationCss.separator} />
+      <p>
+        <img src="/images/zakodium.svg" width="250" />
+      </p>
+      <p>
+        <img src="/images/bigmap.jpg" width="100" />
       </p>
     </div>
   );
