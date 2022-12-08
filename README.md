@@ -2,7 +2,8 @@
 
 <https://app.galvanicium.org>
 
-Galvanium is a web application made to visualize and superimpose BioLogic data.
+Galvanicium is a web application made to display and superimpose measurements
+from potentiostats and battery cyclers.
 
 This repository contains the source code of the application.
 
