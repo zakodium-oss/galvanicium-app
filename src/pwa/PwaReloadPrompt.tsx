@@ -46,7 +46,7 @@ export default function PwaReloadPrompt() {
         setInterval(() => {
           console.log('Checking for updates...');
           void registration.update();
-        }, 60 * 1000); // TODO: one hour
+        }, 30 * 1000); // TODO: one hour
       }
     },
   });
