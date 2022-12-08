@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 27.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-	y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-	<style type="text/css">
-		.st0 {
-			font-family: 'MyriadPro-Regular';
-		}
-
-		.st1 {
-			font-size: 403.4644px;
-		}
-
-		.st2 {
-			font-size: 12px;
-		}
-	</style>
-	<text transform="matrix(1 0 0 1 31.8801 391.1633)" class="st0 st1">Ga</text>
+<svg version="1.1"
+	 id="svg4152" xmlns:cc="http://creativecommons.org/ns#" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" inkscape:version="0.92.2 5c3e80d, 2017-08-06"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000"
+	 style="enable-background:new 0 0 1000 1000;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#528C00;stroke-width:46.8321;}
+</style>
+<sodipodi:namedview  bordercolor="#666666" borderopacity="1.0" id="base" inkscape:current-layer="svg4152" inkscape:cx="357.82213" inkscape:cy="459.29481" inkscape:guide-bbox="true" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:window-height="855" inkscape:window-maximized="1" inkscape:window-width="1600" inkscape:window-x="0" inkscape:window-y="1" inkscape:zoom="0.5" objecttolerance="20" pagecolor="#ffffff" showgrid="true" showguides="true">
+	<sodipodi:guide  id="guide5596" inkscape:locked="false" orientation="horizontal" position="200"></sodipodi:guide>
+	<inkscape:grid  empspacing="50" id="grid3430" type="xygrid"></inkscape:grid>
+	<sodipodi:guide  id="guide4169" inkscape:locked="false" orientation="0,1" position="550,1000"></sodipodi:guide>
+</sodipodi:namedview>
+<path id="path913" inkscape:connector-curvature="0" sodipodi:nodetypes="ccsssc" class="st0" d="M50,474.7
+	c421.9,20.5,370-347.9,472.4-356c76.4,1.8-35,293.3,402.4,293.3c54.7,0,0,62.7-218.7,62.7c-109.4,0-164,376-273.4,376
+	S378.1,550,50,550"/>
 </svg>
