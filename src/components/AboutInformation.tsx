@@ -52,10 +52,18 @@ export function AboutInformation() {
       </p>
       <span css={aboutInformationCss.separator} />
       <p>
-        <img src="/images/zakodium.svg" width="250" />
+        <a href="https://www.zakodium.com" target="_blank" rel="noreferrer">
+          <img src="/images/zakodium.svg" width="250" />
+        </a>
       </p>
       <p>
-        <img src="/images/bigmap.jpg" width="100" />
+        <a
+          href="https://www.big-map.eu/big-map"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img src="/images/bigmap.jpg" width="100" />
+        </a>
       </p>
     </div>
   );
