@@ -27,7 +27,8 @@ export default defineConfig({
 
         name: 'Galvanicium',
         short_name: 'Galvanicium',
-        description: 'Galvanicium description',
+        description:
+          'Display and superimpose measurements from potentiostats and battery cyclers.',
 
         icons: [
           {
@@ -44,7 +45,7 @@ export default defineConfig({
             src: 'logo/pwa-512x512.png',
             sizes: '512x512',
             type: 'image/png',
-            purpose: 'any maskable'
+            purpose: 'any maskable',
           },
         ],
       },
