@@ -39,7 +39,17 @@ export default function PwaReloadPrompt() {
   const {
     needRefresh: [needRefresh, setNeedRefresh],
     updateServiceWorker,
-  } = useRegisterSW();
+  } = useRegisterSW({
+    onRegisteredSW(url, registration) {
+      console.log('Registered SW:', url, registration);
+      if (registration) {
+        setInterval(() => {
+          console.log('Checking for updates...');
+          void registration.update();
+        }, 60 * 1000); // TODO: one hour
+      }
+    },
+  });
 
   const close = () => {
     setNeedRefresh(false);
