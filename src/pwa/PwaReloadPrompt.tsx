@@ -41,7 +41,6 @@ export default function PwaReloadPrompt() {
     updateServiceWorker,
   } = useRegisterSW({
     onRegisteredSW(url, registration) {
-      console.log('Registered SW:', url, registration);
       if (registration) {
         setInterval(() => {
           console.log('Checking for updates...');
