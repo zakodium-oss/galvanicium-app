@@ -51,7 +51,6 @@ export default function PwaReloadPrompt() {
             return;
           }
 
-          console.log('Checking for updates...');
           fetch(swUrl, {
             cache: 'no-store',
             headers: {
@@ -67,7 +66,7 @@ export default function PwaReloadPrompt() {
             .catch(() => {
               // Ignore errors.
             });
-        }, 30 * 1000); // TODO: one hour
+        }, 60 * 60 * 1000);
       }
     },
   });
