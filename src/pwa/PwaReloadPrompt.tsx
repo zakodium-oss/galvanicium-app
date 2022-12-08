@@ -39,7 +39,37 @@ export default function PwaReloadPrompt() {
   const {
     needRefresh: [needRefresh, setNeedRefresh],
     updateServiceWorker,
-  } = useRegisterSW();
+  } = useRegisterSW({
+    onRegisteredSW(swUrl, reg) {
+      if (reg) {
+        setInterval(() => {
+          if (!(!reg.installing && navigator)) {
+            return;
+          }
+
+          if ('connection' in navigator && !navigator.onLine) {
+            return;
+          }
+
+          fetch(swUrl, {
+            cache: 'no-store',
+            headers: {
+              cache: 'no-store',
+              'cache-control': 'no-cache',
+            },
+          })
+            .then(async (resp) => {
+              if (resp?.status === 200) {
+                await reg.update();
+              }
+            })
+            .catch(() => {
+              // Ignore errors.
+            });
+        }, 60 * 60 * 1000);
+      }
+    },
+  });
 
   const close = () => {
     setNeedRefresh(false);
