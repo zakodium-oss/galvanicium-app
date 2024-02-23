@@ -53,17 +53,14 @@ export function AboutInformation() {
       <span css={aboutInformationCss.separator} />
       <p>
         <a href="https://www.zakodium.com" target="_blank" rel="noreferrer">
-          <img src="/images/zakodium.svg" width="250" />
+          <img src="/images/zakodium.svg" width="150" />
         </a>
       </p>
       <p>
-        <a
-          href="https://www.big-map.eu/big-map"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img src="/images/bigmap.jpg" width="100" />
-        </a>
+        This project has received funding from the European Union’s Horizon 2020
+        research and innovation programme under grant agreement No 957189. The
+        project is part of BATTERY 2030+, the large-scale European research
+        initiative for inventing the sustainable batteries of the future.
       </p>
     </div>
   );
